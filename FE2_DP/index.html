@@ -11,13 +11,18 @@
   </head>
   <body>
     <div class="container"> 
-      <div id="menu">
-        menu
-      </div>
-    <div class="container">Bem vindo a aula de Front End</div>
+      <div id="menu"> menu </div>
+    <div class="container">      
+      <div id="conteudo">Bem vindo a aula de Front End</div>
+    </div>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script>  
     $( "#menu" ).load( "./components/menu.html" );
+    function menu(pagina){
+    $( "#conteudo" ).load( "./pages/"+pagina+".html" );
+    }
     </script>
   </body>
 </html>
+ 
